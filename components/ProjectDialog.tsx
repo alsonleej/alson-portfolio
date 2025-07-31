@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -12,6 +13,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { TechnologyLogos } from "@/components/TechnologyLogos";
@@ -32,22 +34,34 @@ const isVideo = (url: string) => {
 };
 
 export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   if (!project) return null;
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto px-8">
         
-        <div className="space-y-6">
+        <div className="space-y-4 md:space-y-6">
           {/* Media Carousel */}
           {project.media.length > 0 && (
             <div className="space-y-4">
-              <div className="relative px-12">
+              <div className="relative px-0 md:px-12">
                 <Carousel
                   opts={{
                     align: "start",
                     loop: true,
                   }}
+                  setApi={setApi}
                   className="w-full"
                 >
                   <CarouselContent>
@@ -78,11 +92,28 @@ export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) 
                   </CarouselContent>
                   {project.media.length > 1 && (
                     <>
-                      <CarouselPrevious />
-                      <CarouselNext />
+                      <CarouselPrevious className="hidden md:flex" />
+                      <CarouselNext className="hidden md:flex" />
                     </>
                   )}
                 </Carousel>
+                
+                {/* Mobile Dot Indicators */}
+                {project.media.length > 1 && (
+                  <div className="flex justify-center gap-2 mt-4 md:hidden">
+                    {project.media.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => api?.scrollTo(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          current === index 
+                            ? 'bg-primary' 
+                            : 'bg-muted-foreground/30'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           )}
@@ -95,13 +126,12 @@ export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) 
 
           {/* Description */}
           <div className="space-y-4">
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-sm md:text-lg">
               {project.description}
             </p>
 
             {/* Technology Stack */}
             <div className="space-y-2">
-              <h4 className="text-sm font-medium text-foreground">Tech Stack</h4>
               <TechnologyLogos technologies={project.technologies} />
             </div>
 
