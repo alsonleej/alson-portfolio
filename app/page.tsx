@@ -89,7 +89,7 @@ export default function Home() {
 
               <div className="mt-8 flex flex-row gap-4 justify-center md:justify-start">
                 <Button size="lg" variant="default" className="cursor-pointer">
-                  <Link href="/ALSONLEE_RESUME_2025.pdf" className="flex items-center gap-2">
+                  <Link href={`/${my.resume}`} className="flex items-center gap-2">
                     <FileText className="h-5 w-5" />
                     Resume
                   </Link>

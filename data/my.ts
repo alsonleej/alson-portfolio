@@ -23,6 +23,8 @@ const getProjectMedia = (projectId: string, mediaFiles: string[]): string[] => {
   return mediaFiles.map(file => `/projects/${projectId}/${file}`);
 };
 
+export const resume: string = "Alson Lee_Resume_2025.pdf";
+
 export const projects: Project[] = [
   {
     id: "VisEyeQ Safety Monitoring Dashboard",
@@ -231,5 +233,5 @@ export const desc: string = `
 ...a Computer Science undergraduate at the **National University of Singapore.** `
 
 export default {
-  experiences, desc, titles, projects
+  resume,experiences, desc, titles, projects, 
 };
