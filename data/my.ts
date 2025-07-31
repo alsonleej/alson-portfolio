@@ -129,7 +129,7 @@ export const projects: Project[] = [
     id: "namecardsgenerator",
     title: "Name Cards Generator",
     date: "2023",
-    description: "A tool to easilygenerate professional name cards and gift cards with customizable templates. Just fill up names in Excel and click a button!",
+    description: "A tool to easily generate professional name cards and gift cards with customizable templates. Just fill up names in Excel and click a button!",
     media: getProjectMedia("namecardsgenerator", ["0.mp4", "1.png"]),
     technologies: [
       "VBA",
