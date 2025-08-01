@@ -49,7 +49,7 @@ export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) 
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto px-8">
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto px-8 py-4 md:py-8">
         
         <div className="space-y-4 md:space-y-6">
           {/* Media Carousel */}

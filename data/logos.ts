@@ -18,7 +18,6 @@ export const technologyIcons: Record<string, TechnologyIcon> = {
   "SQLite": { icon: "devicon-sqlite-plain colored", type: "icon" },
   "AWS": { icon: "devicon-amazonwebservices-original colored", type: "img", src: "https://img.icons8.com/m_outlined/600/FD7E14/amazon-web-services.png" },
   "MATLAB": { icon: "devicon-matlab-plain colored", type: "img", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" },
-  "Office365": { icon: "devicon-microsoft-plain", type: "img", src: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_365_%282022%29.svg" },
   "VBA": { icon: "devicon-vba-plain", type: "img", src: "https://www.svgrepo.com/show/374159/vba.svg" },
   "Power Automate": { icon: "devicon-powerautomate-plain", type: "img", src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Microsoft_Power_Automate.svg" },
   "C": { icon: "devicon-c-plain colored", type: "icon" },

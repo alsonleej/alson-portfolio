@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { technologyIcons } from "@/data/logos";
 import Image from "next/image";
 
 export function LogoMarquee() {
-    const [isHovered, setIsHovered] = useState(false);
-
     // Convert technologyIcons to the format expected by LogoMarquee
     const skills = Object.entries(technologyIcons).map(([name, tech]) => ({
         icon: tech.icon,
@@ -17,11 +14,7 @@ export function LogoMarquee() {
 
     return (
         <div 
-            className={`animate-marquee flex transition-all duration-300 ${
-                isHovered ? 'marquee-paused' : ''
-            }`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            className="animate-marquee flex"
         >
         {[...Array(2)].map((_, setIndex) => (
           <div key={setIndex} className="flex gap-8 items-center min-w-max px-5">

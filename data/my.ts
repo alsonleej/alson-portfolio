@@ -148,13 +148,12 @@ export const experiences: TimelineExperience[] = [
     title: "Founding Software Engineer",
     organization: "VisEyeQ",
     description: [
-      "River Venture-backed AI startup revolutionising warehouse safety powered by AI/ML and IoT",
-      "Developed a B2B SaaS cloud-based dashboard to visualize real-time safety alerts and incident analytics in warehouses, using React, TypeScript, TailwindCSS, and deployed on AWS Amplify for CI/CD",
-      "Integrated IoT-enabled wearables with frontend using custom APIs via AWS API Gateway to surface live hazard data",
-      "Engineered a secure authentication flow with AWS Cognito, supporting both email and Google OAuth sign-in options",
-      "Designed and implemented AWS Lambda functions to compute injury cost savings and return-on-investment (ROI) metrics",
-      "Managed persistent data with AWS DynamoDB for user input and incident history; streamed hazard footage from AWS S3 buckets",
-      "Collaborated with cross-functional team for Demo Day pitch (Jun 2025) and StartupSG Founder Grant application; targeting pilot deployments by Aug 2025"
+      "River Venture-backed AI startup revolutionising warehouse safety powered by IoT",
+      "Developed a B2B SaaS cloud-based dashboard analysing data from IP cameras, IoT wearables and ML models",
+      "Integrated IoT-enabled wearables with frontend using custom APIs via AWS API Gateway",
+      "Engineered secure authentication using AWS Cognito with email & Google OAuth",
+      "Built AWS Lambda functions to compute injury cost savings and ROI",
+      "Managed persistent user/incident data with AWS DynamoDB; streamed video from AWS S3"
     ],
     startDate: "Feb 2025",
     endDate: "Present",
@@ -174,12 +173,12 @@ export const experiences: TimelineExperience[] = [
     title: "Open Source Contributor",
     organization: "Source Academy",
     description: [
-      "Experiential environment as education tool to teach programming classes",
-      "Implemented 7 critical bugfixes and 3 new features used by 1,200+ undergraduates every year for learning",
-      "Co-developed the CSE Machine, a Source-to-Javascript interpreter",
-      "Co-engineered core features of the Source language, including its control flow, instruction execution order and built-in functions",
-      "Developed 10 high-coverage unit and integration tests using Jest, including edge cases for control flow and instruction evaluation",
-      "Selected to present project at NUS STePS conference to potential investors and government agencies"
+      "Online programming environment and visual debugger to teach programming classes",
+      "Implemented 7 bugfixes and 3 new features used by 1,200+ undergraduates",
+      "Co-developed CSE Machine, a Source-to-JavaScript interpreter",
+      "Engineered core features: control flow, instruction order, and built-ins",
+      "Wrote 10 high-coverage Jest test cases for unit/integration testing",
+      "Selected presenter at NUS STePS conference"
     ],
     startDate: "Jan 2025",
     endDate: "May 2025",
@@ -198,7 +197,8 @@ export const experiences: TimelineExperience[] = [
     organization: "Singapore Armed Forces Lancer",
     description: [
       "Set-up industrial-scale networking capabilities, including installation and maintenance of networking hardware and software",
-      "Upgraded camp-wide IT infrastructure to support WiFi 6 while tripling load-bearing capacity and endpoints, leading to a 200% increase in broadband coverage",
+      "Upgraded camp-wide IT infrastructure to support WiFi 6",
+      "Tripled load-bearing capacity and endpoints, leading to a 200% increase in broadband coverage",
       "Developed a custom Excel VBA macro and database system to streamline administrative forms, re-designed workflow by reducing processing time by 50% and eliminating human error"
     ],
     startDate: "Jan 2022",
