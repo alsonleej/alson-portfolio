@@ -67,7 +67,7 @@ export default function Home() {
         {/* 👇 Hero Section */}
         <section id="home" className="flex items-center justify-center min-h-[100dvh] px-22 py-20">
           
-          <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8">
+          <div className="max-w-6xl w-full flex flex-col md:flex-row items-center gap-8 -mt-[69px]">
             {/* 👇 Text Content*/}
             <div className="flex-1 text-center md:text-left text-3xl order-2 md:order-1">
               Hello, I&apos;m

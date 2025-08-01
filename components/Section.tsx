@@ -10,7 +10,7 @@ interface SectionProps {
 
 export function Section({ children, index, title, className = "", id }: SectionProps) {
   const isOdd = index % 2 === 1;
-  const baseClasses = "py-20 px-5 sm:px-10 md:px-16";
+  const baseClasses = "py-8 sm:py-20 px-5 sm:px-10 md:px-16";
   const backgroundClasses = isOdd ? "bg-white/5 backdrop-blur-sm" : "";
   
   return (

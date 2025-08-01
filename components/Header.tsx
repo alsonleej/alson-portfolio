@@ -21,7 +21,17 @@ export function Header() {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href) as HTMLElement;
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      // Add offset for fixed header
+      const headerHeight = 69; // Approximate header height in pixels
+      const elementPosition = element.offsetTop - headerHeight;
+      
+      // Ensure we don't scroll to negative positions
+      const scrollPosition = Math.max(0, elementPosition);
+      
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth"
+      });
     }
     setIsMenuOpen(false);
   };
