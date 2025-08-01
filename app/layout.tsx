@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Alson Lee",
-  description: "Alson Lee's Portfolio",
+  description: "Alson Lee's Portfolio. I'm always building something new.",
 };
 
 export default function RootLayout({
@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <meta property="og:image" content="/profile_pic.png" />
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
       </head>
