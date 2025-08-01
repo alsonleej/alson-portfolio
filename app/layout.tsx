@@ -27,7 +27,6 @@ export default function RootLayout({
     <html lang="en">
       <meta property="og:title" content="Alson Lee" />
       <meta property="og:description" content="Alson Lee's Portfolio. I'm always building something new." />
-      <meta property="og:image" content="/profile_pic.png" />
       <meta property="og:url" content="https://alson-portfolio.vercel.app" />
       <meta property="og:type" content="website" />
       <meta property="og:locale" content="en_SG" />
