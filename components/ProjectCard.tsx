@@ -28,7 +28,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         className="h-full bg-background/50 backdrop-blur-sm border-border hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer"
         onClick={() => setIsDialogOpen(true)}
       >
-        <CardContent className="p-6">
+        <CardContent className="px-6 py-0 sm:py-6">
           {/* Image/Video Section */}
           <div className="relative mb-6 rounded-lg overflow-hidden bg-muted/20">
             {isVideo(project.media[0]) ? (
