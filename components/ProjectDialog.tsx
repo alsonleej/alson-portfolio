@@ -49,7 +49,7 @@ export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) 
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto px-8 py-4 md:py-8">
+      <DialogContent className="max-w-6xl sm:max-w-6xl lg:max-w-7xl xl:max-w-8xl 2xl:max-w-9xl max-h-[90vh] overflow-y-auto px-8 py-4 md:py-8 font-sans">
         
         <div className="space-y-4 md:space-y-6">
           {/* Media Carousel */}
@@ -75,7 +75,7 @@ export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) 
                               loop
                               muted
                               playsInline
-                              className="w-full h-64 object-cover"
+                              className="w-full h-128 object-cover md:object-contain"
                             />
                           ) : (
                             <Image
@@ -83,7 +83,7 @@ export function ProjectDialog({ project, isOpen, onClose }: ProjectDialogProps) 
                               alt={`${project.title} - Image ${index + 1}`}
                               width={800}
                               height={256}
-                              className="w-full h-64 object-cover"
+                              className="w-full h-128 object-cover md:object-contain"
                             />
                           )}
                         </div>
