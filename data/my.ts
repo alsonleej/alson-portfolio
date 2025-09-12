@@ -230,6 +230,8 @@ export const desc: string = `
 
 ...reading about **finance**, **nutrition**, and **mental well-being**.
 
+...always down for a game of **pool**.
+
 ...a Computer Science undergraduate at the **National University of Singapore.** `
 
 export default {
