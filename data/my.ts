@@ -144,6 +144,28 @@ export const projects: Project[] = [
 
 export const experiences: TimelineExperience[] = [
   {
+    id: "kisi",
+    title: "Fullstack Software Engineer Intern",
+    organization: "Kisi",
+    description: [
+      "Developed the frontend and backend (servers, database), including creating custom API, for Kisi's guest management and access control system demo at FIBO Cologne 2026 event.",
+    ],
+    startDate: "Jan 2026",
+    endDate: "Present",
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "TypeScript", 
+      "Vite",
+      "Python",
+      "Bottle",
+      "cURL",
+      "SQL"
+    ],
+    organizationIcon: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEVKUv////9IUP8/SP9DS/+mqf9bYv+Pk/9HT/87RP9FTf9BSv89Rv80Pv83Qf86Q//Y2f/7+/9PV/+rrv/39//h4v/n6P/v8P+Fiv/R0/95fv/Iyv+UmP9wdf+2uP9XXv90ev/Cxf+Jjv9jaf/e4P+6vf+Znf9/hP9qcP8pNf/U1v/z8//Awv+prP+dof+ws/9d0S0xAAAExElEQVR4nO3caXuiOgAF4JigQoig1NYFrQuOOtN6+///3QX3pbXVHJ5mOuf91g/GnCIhK0IQEREREREREREREREREREREREREREREREREREREf2bpK+9nJbyu2sCJ30vaERhbbiY1uvdcZbkfyn/x+SUntFZ/XXWrhx56j30E6P0d1cOQMfJdNKpvKc1Wy2N+eBKegqtlJ+MDKN+2n433u5aVpPIfy/gYFXFWiX4iDJUg6dr8TbSLL78sZrJ5x+8UQ2eMNTzq5fvoLcMzr/dqzufUEbTL1y/nclInX7cX7qeUCW9m76+PW+cVEAm77dOriSUweDmCjST8LiIYOZyQq3TO2rQ7gZHZZhfDicMazfcgcceGkeFzLH5kAnV8ItN6KU03tdC95HpCrCEZmFRi6beVUMmLVi2DVRC07WqRnPfuQrQjSkoobK5goXmrqMa/YHkOsAk9IbWFUm3/ZsA3ZhCEvqIm+d589AI/7Mv6gQioVSPiKrU1z04eGOKSBiBflijYjwlR5jC9gAJwymoLk/r1iYAlbZjn1CKu5/0595MXl4D/LiwTxhNcLXJ8t9po4krr2CdUNs/KA6akRDxPd33K6wTYoc7C0+oN2SB9gk9u97auadIeLePMa+yTCgVeMQ69bRtB/CMZUJ0dSqPAXqqxjJhjO4nV/peDVugXUJ4B6RSmQTgEaJdQvMArUyhnWjsI98uYQSf+8s74MGd0z0fsEpYwvxtpdL7DRmp7FklVFVoXbZ+Y7ttVgljcBdyI7tt2vwzNgll8gKty9bqFVqcTUI9hlZlp4ftmNokRPcgtzrYu9smIX6NYa2NfcjaJAxKaWgqLew/ziahwj6a95xpS6UsoUdTcOaJLxPYFNQp7DPIJiF+YLGB/cfZJAQP5ErChN+R0JkR8D9wH5bVljozxpf+T38eCsyy4SVn+jTCwKcS1xzql5pnaFV22itocRwfXgNdWDtI3RnjS1HKPE3VnXmaElYtCg7NtQmF3vtSaLk0XyozaF02UpfmvEVUwjxG16V1izKm9V8EuDNouX6YQCtTeHVr/VDE2HYvN3RrDRg/sd+MHVvHFwY8K7xwbS+G8LD1eWwID7xb33pPFHYNcayFcWxPlPCRT/1e7OC+Ntj+2Vyr5uLeRCFxu0Oqbu4vxTU2s/Vedvf2COd3DqZtaImiLi7u80YtlS7Wx/Sc3KsvpA8Y7Fc35y3gY07MmRmdWfeWX+NNUW6emREiHFpGTKNtSRF6cwDq7Jqyu316+1PdBj27BTt/qGymFtP94Tw5cvX8Yf5YzO7+7z9Hf8MZ0jxicuctND86B4yfvkOe5fbv2iTVGZujMgx2OhicUMhgcfOiaSq94yIMfMUO/E4FT09u+vpO9/ydCvCFAvx7MfpfP2PSepPh6cdLWOzBv9tEq+4Xp3QntYv38JSwYIdPKKQXLz6/jq3nJLh8B48BD/DLSZjTjezXtYFsqzkIL95Ns/5gtw42KOEdQ2t+oPtv77eLnd68FocffO/6vWdQ5b1aTGqjRouH3vFN+TKbDJbSfBTvLyS1ihqRP1oO++NhlpioEXg/531tB1JKX/v+D3zlHhERERERERERERERERERERERERERERERERERERHRd/gfN85lhrNNKQoAAAAASUVORK5CYII=",
+    organizationIconAlt: "Kisi"
+  },
+  {
     id: "viseyeq",
     title: "Founding Software Engineer",
     organization: "VisEyeQ",
@@ -156,7 +178,7 @@ export const experiences: TimelineExperience[] = [
       "Managed persistent user/incident data with AWS DynamoDB; streamed video from AWS S3"
     ],
     startDate: "Feb 2025",
-    endDate: "Present",
+    endDate: "Dec 2025",
     technologies: [
       "React",
       "TypeScript", 
@@ -230,7 +252,7 @@ export const desc: string = `
 
 ...reading about **finance**, **nutrition**, and **mental well-being**.
 
-...always down for a game of **pool**.
+...always down for a game of **pool** or **snooker*.
 
 ...a Computer Science undergraduate at the **National University of Singapore.** `
 
