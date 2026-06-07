@@ -28,7 +28,7 @@ export const resume: string = "Alson Lee_Resume_2025.pdf";
 export const projects: Project[] = [
   {
     id: "VisEyeQ Safety Monitoring Dashboard",
-    title: "VisEyeQ Safety Monitoring Dashboard",
+    title: "Safety Monitoring Dashboard",
     date: "2025",
     description: "A B2B SaaS cloud-based dashboard to visualize real-time safety alerts and incident analytics in warehouses, powered by AI/ML and IoT sensors.",
     media: getProjectMedia("VisEyeQ Safety Monitoring Dashboard", ["0.mp4", "1.mp4", "2.png", "3.png", "4.png", "5.png", "6.png"]),
@@ -149,6 +149,7 @@ export const experiences: TimelineExperience[] = [
     organization: "Kisi",
     description: [
       "Developed the frontend and backend (servers, database), including creating custom API, for Kisi's guest management and access control system demo at FIBO Cologne 2026 event.",
+      "Completed a full-stack cross-team migration of a third-party integration from a legacy system to a modern app in Kisi Marketplace", /*, migrating over ___ users leading to a __% reduction incloud costs */
     ],
     startDate: "Jan 2026",
     endDate: "Present",
@@ -252,7 +253,7 @@ export const desc: string = `
 
 ...reading about **finance**, **nutrition**, and **mental well-being**.
 
-...always down for a game of **pool** or **snooker*.
+...always down for a game of **pool** or **snooker**.
 
 ...a Computer Science undergraduate at the **National University of Singapore.** `
 
