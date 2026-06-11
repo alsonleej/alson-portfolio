@@ -158,7 +158,7 @@ export default function Home() {
           <div className="flex justify-center gap-8 md:grid md:grid-cols-4">
             <ContactCard linkto="https://github.com/alsonleej" title="GitHub" subtitle="@alsonleej" logo="devicon-github-original colored" />
             <ContactCard linkto="https://www.linkedin.com/in/alson-lee-286881227/?originalSubdomain=sg" title="LinkedIn" subtitle="Alson Lee" logo="devicon-linkedin-plain colored" />
-            <ContactCard linkto="https://linktr.ee/alsonleej" title="Linktree" subtitle="Alson Lee" img="/linktree.svg" />
+            <ContactCard linkto="https://alsonleej.substack.com/" title="Substack" subtitle="Alson Lee" img="/substack.svg" />
             <ContactCard linkto="mailto:alsonleej@gmail.com" title="Email" subtitle="alsonleej@gmail.com" img="https://img.icons8.com/ios-glyphs/60/000000/gmail.png" />
           </div>
 
