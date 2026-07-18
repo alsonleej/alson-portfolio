@@ -23,7 +23,7 @@ const getProjectMedia = (projectId: string, mediaFiles: string[]): string[] => {
   return mediaFiles.map(file => `/projects/${projectId}/${file}`);
 };
 
-export const resume: string = "Alson Lee_Resume_2025.pdf";
+export const resume: string = "ALSON_LEE_Resume_2026.pdf";
 
 export const projects: Project[] = [
   {
