@@ -29,6 +29,8 @@ export const technologyIcons: Record<string, TechnologyIcon> = {
   "Vite": { icon: "devicon-vitejs-plain", type: "img", src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" },
   "Next.js": { icon: "devicon-nextjs-original colored", type: "icon" },
   "Linux": { icon: "devicon-linux-plain colored", type: "icon" },
+  "Node.js": { icon: "devicon-nodejs-plain colored", type: "icon" },
+  "Raspberry Pi": { icon: "devicon-raspberrypi-plain colored", type: "icon" },
   "Git": { icon: "devicon-git-plain colored", type: "icon" },
   "GitHub": { icon: "devicon-github-original colored", type: "icon" },
   "Vim": { icon: "devicon-vim-plain colored", type: "icon" },

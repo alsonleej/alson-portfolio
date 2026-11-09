@@ -27,6 +27,23 @@ export const resume: string = "ALSON_LEE_Resume_2026.pdf";
 
 export const projects: Project[] = [
   {
+    id: "FIBO SkiErg Challenge System",
+    title: "FIBO SkiErg Challenge System",
+    date: "2026",
+    description: "A 30-second SkiErg challenge for Kisi's booth at FIBO Cologne 2026. Visitors registered on a kiosk, got a QR ticket from a label printer, scanned in at a Kisi reader to start, and climbed a real-time leaderboard. Includes a live booth analytics dashboard. Used by 367 participants.",
+    media: getProjectMedia("FIBO SkiErg Challenge System", ["0.mp4", "1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Vite",
+      "Node.js",
+      "tRPC",
+      "SQLite",
+      "Raspberry Pi"
+    ]
+  },
+  {
     id: "VisEyeQ Safety Monitoring Dashboard",
     title: "Safety Monitoring Dashboard",
     date: "2025",
@@ -148,8 +165,12 @@ export const experiences: TimelineExperience[] = [
     title: "Fullstack Software Engineer Intern",
     organization: "Kisi",
     description: [
-      "Developed the frontend and backend (servers, database), including creating custom API, for Kisi's guest management and access control system demo at FIBO Cologne 2026 event.",
-      "Completed a full-stack cross-team migration of a third-party integration from a legacy system to a modern app in Kisi Marketplace", /*, migrating over ___ users leading to a __% reduction incloud costs */
+      "Developed the frontend and backend (servers, database), including creating custom API, for Kisi's guest management and access control system demo at FIBO Cologne 2026 event, used by 367 participants.",
+      "Migrated a third-party camera integration from **Firestore** to **PostgreSQL**, with **no downtime**, using dual-writes, a backfill and staged read cutover, saving **$500/mth** on infrastructure costs across **600+** customers",
+      "Built and own an integration with Rhombus, an enterprise security camera company, end to end (React, Node.js, PostgreSQL, Terraform), and **migrated** existing customers onto it",
+      "Owned **4 production apps**: visitor check-in kiosks, room and desk booking, badge printing, and camera integration",
+      "Shipped a **custom form builder** for **2 products** within a week of a customer request, covering the schema, shared backend, admin UI and docs",
+      "Provisioned **GCP secrets** via Terraform for secure deployment",
     ],
     startDate: "Jan 2026",
     endDate: "Present",

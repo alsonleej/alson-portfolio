@@ -93,7 +93,15 @@ export function TimelineItem({ experience, index }: TimelineItemProps) {
                 {experience.description.map((item, idx) => (
                   <li key={idx} className="flex items-start">
                     <span className="text-primary mr-2 mt-1">•</span>
-                    <span>{item}</span>
+                    <span>
+                      {item.split(/\*\*(.+?)\*\*/g).map((part, i) =>
+                        i % 2 === 1 ? (
+                          <strong key={i} className="font-semibold text-foreground">{part}</strong>
+                        ) : (
+                          part
+                        )
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
